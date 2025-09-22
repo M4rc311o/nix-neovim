@@ -130,6 +130,37 @@ return {
 	},
 	{
 		"lua_ls",
-		lsp = {},
+		lsp = {
+			filetypes = { "lua" },
+		},
+	},
+	{
+		"nixd",
+		lsp = {
+			filetypes = { "nix" },
+			settings = {
+				nixd = {
+					nixpkgs = {
+						expr = nixCats.extra("nixdExtras.nixpkgs") or [[import <nixpkgs> {}]],
+					},
+					options = {
+						nixos = {
+							expr = nixCats.extra("nixdExtras.nixos_options"),
+						},
+						["home-manager"] = {
+							expr = nixCats.extra("nixdExtras.home_manager_options"),
+						},
+					},
+					formatting = {
+						command = { "nixfmt" },
+					},
+					diagnostic = {
+						suppress = {
+							"sema-extra-with",
+						},
+					},
+				},
+			},
+		},
 	},
 }

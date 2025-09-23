@@ -22,7 +22,7 @@ vim.opt.cursorline = true
 
 vim.opt.scrolloff = 10
 
-vim.opt.wrap = falseo
+vim.opt.wrap = false
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4

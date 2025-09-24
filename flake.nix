@@ -235,8 +235,6 @@
         extra = {
           nixdExtras = {
             nixpkgs = ''import ${pkgs.path} {}'';
-            nixos_options = ''(builtins.getFlake "path:${builtins.toString inputs.self.outPath}").nixosConfigurations.configname.options'';
-            home_manager_options = ''(builtins.getFlake "path:${builtins.toString inputs.self.outPath}").homeConfigurations.configname.options.home-manager.users.type.getSubOptions []'';
           };
         };
       };

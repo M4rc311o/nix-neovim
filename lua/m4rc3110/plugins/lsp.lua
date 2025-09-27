@@ -163,4 +163,10 @@ return {
 			},
 		},
 	},
+	{
+		"texlab",
+		lsp = {
+			filetypes = { "tex", "plaintex" },
+		},
+	},
 }

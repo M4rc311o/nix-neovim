@@ -104,6 +104,7 @@
           # LSPs
           lua-language-server
           nixd
+          texlab
         ];
       };
 
@@ -146,6 +147,7 @@
           luasnip
           friendly-snippets
           harpoon2
+          vimtex
         ];
       };
 

@@ -9,6 +9,18 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+  desc = "Written text adjustments",
+  group = vim.api.nvim_create_augroup("WrittenText", { clear = true }),
+  pattern = { "tex", "plaintex" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true
+    vim.keymap.set({ "n", "v" }, "j", "v:count ? 'j' : 'gj'", { buffer = true, expr = true })
+	vim.keymap.set({ "n", "v" }, "k", "v:count ? 'k' : 'gk'", { buffer = true, expr = true })
+  end,
+})
+
 -- NOTE: register an extra lze handler with the spec_field 'for_cat'
 -- that makes enabling an lze spec for a category slightly nicer
 require("lze").register_handlers(require('nixCatsUtils.lzUtils').for_cat)

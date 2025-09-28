@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.wrap = true
     vim.opt_local.linebreak = true
     vim.keymap.set({ "n", "v" }, "j", "v:count ? 'j' : 'gj'", { buffer = true, expr = true })
-	vim.keymap.set({ "n", "v" }, "k", "v:count ? 'k' : 'gk'", { buffer = true, expr = true })
+    vim.keymap.set({ "n", "v" }, "k", "v:count ? 'k' : 'gk'", { buffer = true, expr = true })
   end,
 })
 

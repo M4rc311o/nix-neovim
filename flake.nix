@@ -148,6 +148,7 @@
           friendly-snippets
           harpoon2
           vimtex
+          peek-nvim
         ];
       };
 

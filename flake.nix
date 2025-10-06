@@ -100,11 +100,13 @@
           # Formaters
           stylua
           nixfmt-rfc-style
+          ruff
 
           # LSPs
           lua-language-server
           nixd
           texlab
+          pyright
         ];
       };
 

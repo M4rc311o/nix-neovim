@@ -150,6 +150,7 @@
           friendly-snippets
           harpoon2
           vimtex
+          markdown-preview-nvim
         ];
       };
 

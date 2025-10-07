@@ -20,4 +20,5 @@ require("lze").load({
 	{ import = "m4rc3110.plugins.trouble" },
 	{ import = "m4rc3110.plugins.harpoon" },
 	{ import = "m4rc3110.plugins.vimtex" },
+	{ import = "m4rc3110.plugins.markdown-preview" },
 })

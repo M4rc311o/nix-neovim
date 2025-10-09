@@ -152,7 +152,7 @@ return {
 						},
 					},
 					formatting = {
-						command = { "nixfmt" },
+						command = { "alejandra" },
 					},
 					diagnostic = {
 						suppress = {

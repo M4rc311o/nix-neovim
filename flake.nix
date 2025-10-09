@@ -99,7 +99,7 @@
 
           # Formaters
           stylua
-          nixfmt-rfc-style
+          alejandra
           ruff
 
           # LSPs
